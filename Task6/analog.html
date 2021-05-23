@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Boxes</title>
+		<style type="text/css">
+			body{
+				font-family: "Courier New", Courier, monospace;  /* phông chữ */
+				font-size: 80%;							/* cỡ chữ */
+				letter-spacing: 0.15em;					/* khoảng cách cách chữ */
+				background-color: #efefef;				/* phông màu */
+			}
+			#page{
+				max-width: 940px;						/* độ dài lớn nhất của khung */
+				min-width: 720px;						/* độ ngắn nhất của khung */
+				margin: 10px auto 10px auto;			/* khung cách lề trái và phải bao nhiêu */
+				padding: 20px;							/* khoảng cách khung vơi các kí tự  */
+				border: 4px double #000;				/* khung có 2 viền và thuộc tính màu */
+				background-color: #ffffff;				/* màu bên trong khung */
+			}
+			#logo{
+				width: 150px;							/* chiều dài của ô chứa ảnh */
+				margin: 10px auto 10px auto;			/* căn lề giữa ảnh */
+			}
+			ul{
+				width: 570px;							/* chiều dài của ô chứa */
+				padding: 15px;							/* khoảng cách giữa các chữ với tất cả các kí tự khác*/
+				margin: 0px auto 0px auto;				/* căn lề giữa */
+				border-top: 2px solid #000;				/* viền bên trên chữ và màu viền */
+				border-bottom: 1px solid #000;			/* viền dưới chữ và màu viền */
+				text-align: left;						/* căn giữa viền khung */
+			}
+			li{
+				display: inline;						/* chữ thành các khối ngang */
+				margin: 0px 3px;						/* khoảng cách chữ với lề*/
+			}
+			p{
+				text-align: center;						/* căn chữ giữa */
+				width: 600px;							/* độ dài của ô chữa  */
+				margin: 10px auto 20px auto;			/* căn lề giữa */
+				font-weight: normal;					/* kiểu chữ */
+			}
+			a{
+				text-decoration: none;					/* dạng bỏ gạch chân chữ */
+				color: #000000;							/* màu chữ */
+				text-transform: uppercase;				/* viết hoa các chũ */
+				padding: 6px 18px 5px 18px;				/* khoảng cách các chữ với nhau */
+			}
+			a:hover, a.on {
+				color: #cc3333;							/* màu chữ mà trang mình đang chọn*/
+				background-color: #efefef;				/* phông màu hiện lên trang mà mình đang chọn */
+			}
+		</style>
+	</head>
+	<body>
+		<div id="page">
+			<div id="logo">
+				<img src="images/logo.gif" alt="The Analog Specialists" />
+			</div>
+			<ul id="navigation">
+				<li><a href="#" class="on">Home</a></li>
+				<li><a href="#" >For Sale</a></li>
+				<li><a href="#">Repairs</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<p>
+				<img src="images/keys.jpg" alt="Fender Rhodes, Hohner Clavinet, and Wurlitzer EP200" />
+			</p>
+			<p>
+				We specialize in the sale and repair of classic keyboards, in particular the Fender Rhodes,
+				Wurlitzer EP200, and Hohner Clavinet.
+			</p>
+		</div>
+	</body>
+</html>

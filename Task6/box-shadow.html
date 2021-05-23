@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Box Shadow</title>
+	<style type="text/css">
+		p {
+			width: 100px;									/* độ dài khung */
+			height: 100px;									/* chiều cao khung */
+			background-color: #e1ddda;						/* màu khung */
+			margin: 20px;									/* khoảng cách giưa các khung */
+			display: inline-block;							/* định dạng theo 1 khối ngang */
+		}
+
+		p.one {
+			-moz-box-shadow: -5px -5px #777777;
+			-webkit-box-shadow: -5px -5px #777777;
+			box-shadow: -5px -5px #777777;						/* định dạng bóng cho khung, độ dày bóng và màu bóng */
+		}
+
+		p.two {
+			-moz-box-shadow: 5px 5px 5px #777777;
+			-webkit-box-shadow: 5px 5px 5px #777777;
+			box-shadow: 5px 5px 5px #777777;					/* định dạng kiểu bóng khung, độ dày của bóng và màu của bóng */
+		}
+
+		p.three {
+			-moz-box-shadow: 5px 5px 5px 5px #777777;
+			-webkit-box-shadow: 5px 5px 5px 5px #777777;
+			box-shadow: 5px 5px 5px 5px #777777;			/* định dạng kiểu bóng khung, độ dày của bóng và màu của bóng */
+		}
+
+		p.four {
+			-moz-box-shadow: 0 0 10px #777777;
+			-webkit-box-shadow: 0 0 10px #777777;
+			box-shadow: 0 0 10px #777777;					/* độ bóng đều ra giữa */
+		}
+
+		p.five {
+			-moz-box-shadow: inset 0 0 10px #777777;
+			-webkit-box-shadow: inset 0 0 10px #777777;
+			box-shadow: inset 0 0 10px #777777;				/* độ bóng lên trên hình */
+		}
+	</style>
+</head>
+
+<body>
+	<p class="one">ONE</p>
+	<p class="two">TWO</p>
+	<p class="three">THREE</p>
+	<br />
+	<p class="four">FOUR</p>
+	<p class="five">FIVE</p>
+</body>
+
+</html>

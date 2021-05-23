@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Boxes</title>
+		<style type="text/css">
+			body {
+				font-size: 80%;										/* cỡ chữ */
+				font-family: "Courier New", Courier, monospace;		/* kiểu chữ */
+				letter-spacing: 0.15em;							/* khoảng cách các chũ */
+				background-color: #efefef;						/* phông màu */
+			}
+			#page {
+				max-width: 940px;							/* độ dài nhất của khung */
+				min-width: 720px;							/* độ ngắn nhất của khung */
+				margin: 10px auto 10px auto;				/* khoảng cách đều với 4 phía :  căn giữa */
+				padding: 20px;								/* thêm khoảng không 4 phía 20px */
+				border: 4px double #000;					/* độ dày khung, kiểu khung, màu khung */
+				background-color: #ffffff;					/* màu trong khung */
+			}
+			#logo {
+				width: 150px;							/* độ dài ảnh */
+				margin: 10px auto 25px auto;			/* khoảng cách ảnh đều với 4 phía: căn giữa */
+			}
+			ul {
+				width: 570px;							/* độ dài ô chứa */
+				padding: 15px;							/* thêm khoảng không 4 phía 15px */
+				margin: 0px auto 0px auto;				/* khoảng cách  4 phía : căn giữa */
+				border-top: 2px solid #000;				/* viền bên trên : độ dầy 2px, kiểu viền solid, màu viền */
+				border-bottom: 1px solid #000;			/* viền bên dưới : độ dầy 1px, kiểu viền solid, màu viền */
+				text-align: center;						/* căn giữa */
+			}
+			li {
+				display: inline;						/* định dạng thành 1 khối ngang */
+				margin: 0px 3px;						/* khoảng cách các phía */
+			}
+			p {
+				text-align: center;						/* căn giữa */
+				width: 600px;							/* độ dài ô chứa */
+				margin: 20px auto 20px auto;			/* căn đều khoảng cách các phía: căn giữa */
+				font-weight: normal;					/* phông chữ thường */
+			}
+			a {
+				color: #000000;							/* màu chữ */
+				text-transform: uppercase;				/* viết hoa các chữ */
+				text-decoration: none;					/* bỏ gạch chân */
+				padding: 6px 18px 5px 18px;				/* thêm khoảng cách các kí tự */
+			}
+			a:hover,
+			a.on {
+				color: #cc3333;							/* màu chữ */
+				background-color: #ffffff;				/* phông màu ô đã chọn */
+			}
+		</style>
+	</head>
+	<body>
+		<div id="page">					<!-- div id page trong body --!>
+			<div id="logo">				<!-- div id logo trong page --!>
+				<img src="images/logo.gif" alt="The Analog Specialists" />
+			</div>
+			<ul id="navigation">  			<!-- danh sách trong div page --!>
+				<li><a href="#" class="on">Home</a></li>
+				<li><a href="#" >For Sale</a></li>
+				<li><a href="#">Repairs</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<p>					<!-- img trong thẻ p trong div page để tải 1 ảnh lên --!>
+				<img src="images/keys.jpg" alt="Fender Rhodes, Hohner Clavinet, and Wurlitzer EP200" />
+			</p>
+			<p>					<!-- đoạn văn bản --!>
+				We specialize in the sale and repair of classic keyboards,
+				in particular the Fender Rhodes, Wurlitzer EP200, and Hohner Clavinet.
+			</p>
+		</div>
+	</body>
+</html>

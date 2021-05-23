@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Border Image</title>
+		<style type="text/css">
+			p {
+				width: 197px;						/* chiều dài của p */
+				height: 54px;						/* chiều cao của p*/
+				border: 11px solid #fdfdfe;			/* 11px: độ dày của khung , solid: định dạng khung kiểu, và màu khung */
+			}
+			p.one {
+				-moz-border-image: url("images/dots.gif") 11 11 11 11 stretch;
+				-webkit-border-image: url("images/dots.gif") 11 11 11 11 stretch;
+				border-image: url("images/dots.gif") 11 11 11 11 stretch;}			/* chỉ định 1 hình ảnh thay khung, stretch là chỉ định phần nào đó trong hình ảnh */
+			p.two {
+				-moz-border-image: url("images/dots.gif") 11 11 11 11 round;
+				-webkit-border-image: url("images/dots.gif") 11 11 11 11 round;
+				border-image: url("images/dots.gif") 11 11 11 11 round;}			/* chỉ định 1 hình ảnh thay khung, round là chỉ định phần nào đó trong hình ảnh */
+		</style>
+	</head>
+	<body>
+		<p class="one"></p>
+		<p class="two"></p>
+	</body>
+</html>
