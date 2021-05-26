@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Empty Cells</title>
+		<style type="text/css">
+			td {
+				border: 1px solid #0088dd;  				/* viền có màu */
+				padding: 15px;}  							/* thêm khoảng cách */
+			table.one {
+				empty-cells: show;}  						/* hiển thị những ô trống  */
+			table.two {
+				empty-cells: hide;} 						/* ẩn những ô bị trống */
+		</style>
+	</head>
+	<body>
+		<table class="one">
+			<tr>
+				<td>1</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td></td>
+			</tr>
+		</table>
+		<table class="two">
+			<tr>
+				<td>1</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td></td>
+			</tr>
+		</table>
+	</body>
+</html>

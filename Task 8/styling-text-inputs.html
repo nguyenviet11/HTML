@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Styling Text Inputs</title>
+		<style type="text/css">
+			input {
+				font-size: 120%;   							/* cỡ chữ */
+				color: #5a5854;  							/* màu chữ */
+				background-color: #f2f2f2;   				/* màu phông */
+				border: 1px solid #bdbdbd;   				/* viền ,màu viền */
+				border-radius: 5px;   						/* độ uốn cong 4 cạnh */
+				padding: 5px 5px 5px 30px;  				/* thêm khoảng cách */
+				background-repeat: no-repeat;   			/* k hiển thị lặp lại hình ảnh */
+				background-position: 8px 9px;  				/* hình ảnh cách trái */
+				display: block;  							/* hiển thị viền theo mặc định */
+				margin-bottom: 10px;  				 		/* cách viền dưới */
+			}
+			input:focus, input:hover {
+				background-color: #ffffff;  				/* phông màu */
+				border: 1px solid #b1e1e4;  				/* viền màu */
+			}
+			input#email {
+				background-image: url("images/email.png");  		/* tải ảnh lên */
+			}
+			input#twitter {
+				background-image: url("images/twitter.png");  		/* tải ảnh lên */
+			}
+			input#web {
+				background-image: url("images/web.png");    		/* Tải ảnh lên  */
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<input type="text" id="email" />
+			<input type="text" id="twitter" />
+			<input type="text" id="web" />
+		</form>
+	</body>
+</html>

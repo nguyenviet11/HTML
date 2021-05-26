@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gaps Between Cells</title>
+		<style type="text/css">
+			td {
+				background-color: #0088dd;   					/* phông màu */
+				padding: 15px;  								/* thêm khoảng cách */
+				border: 2px solid #000000;}  					/* màu viền */
+			table.one {
+				border-spacing: 5px 15px;}  					/* khoảng cách giữa các bảng 5px độ dọc 15px độ ngang*/
+			table.two {
+				border-collapse: collapse;}  					/* khoảng cách giữa các bảng dính liền nhau */
+		</style>
+	</head>
+	<body>
+		<table class="one">
+			<tr>
+				<td>1</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+		</table>
+		<table class="two">
+			<tr>
+				<td>1</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+		</table>
+	</body>
+</html>

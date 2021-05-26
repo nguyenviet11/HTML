@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Labelling form control</title>
+</head>
+<body>
+    <form action="http://www.example.com/subscribe.php">
+        <label>Age: <input type="text" name="age"> </label>             <!-- label đánh dấu văn bản --!>
+        <br />
+        Gender:
+            <input id="female" type="radio" name="gender" value="f">
+            <label for="female">Female</label>                      <!-- gán tên label female = id female --!>
+            <input id="male" type="radio" name="gender" value="m">
+            <label for="male">Male</label>                          <!-- gán tên label male = id male --!>
+
+    </form>
+</body>
+</html>
