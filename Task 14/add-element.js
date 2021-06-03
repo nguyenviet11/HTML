@@ -1,0 +1,14 @@
+// create a new element and store it in a variable.
+var newEl = document.createElement('li');
+
+// create a text node and store it in a variable.
+var newText = document.createTextNode('quinoa');
+
+// attach the new text node to the new element.
+newEl.appendChild(newText);         //tạo thêm 1 li nữa nếu đã có r thì sẽ di chuyển từ chỗ khác về đây
+
+// find the position where the new element should be added.
+var position = document.getElementsByTagName('ul')[0];
+
+// insert the new element into its position.
+position.appendChild(newEl);
